@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <form id="formbox">
+        <label for="amount">Expenseamount:</label>
+        <input type="number" id="amount" required>
+        <label for="description">Description</label>
+        <input type="text" id="description" required>
+        <label for ="categorys" id="category">Category</label>
+        <select id="categorys" value="select one" required>
+            <option ></option>
+            <option>Movies</option>
+            <option>vacation</option>
+            <option>Emi</option>
+            <option>shopping</option>
+            <option>others</option>
+        </select>
+        <input type="submit" value="addexpense" >
+    </form>
+    <div>
+    <ul id="showdata">
+    <p>Expense list</p>
+    </ul>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+<script src="index.js"></script>
+</body>
+
+</html>
